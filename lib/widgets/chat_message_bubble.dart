@@ -1,3 +1,10 @@
+// ==============================================================================
+// DEPRECATED & ARCHIVED
+// This project was built strictly for educational and demonstration purposes.
+// It is no longer actively maintained and has been merged into ChatBud:
+// https://github.com/SandyCompetent/chatbud
+// ==============================================================================
+
 import 'package:flutter/material.dart';
 import 'package:flutter_markdown_plus/flutter_markdown_plus.dart';
 import 'package:intl/intl.dart';

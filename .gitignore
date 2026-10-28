@@ -44,6 +44,12 @@ app.*.map.json
 /android/app/profile
 /android/app/release
 
-# Dont push output folder
+# Environment variables and secrets
+.env
+.env.*
+*.env
+!.env.example
+
+# Output folder
 /output
 .metadata
