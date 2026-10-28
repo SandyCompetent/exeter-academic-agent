@@ -1,5 +1,15 @@
 # Exeter Academic Agent
 
+> [!WARNING]
+> ### ⚠️ Project Status: Learning & Demo Purpose Only (Archived / Unmaintained)
+>
+> **Notice:** This project was developed strictly for **learning and demonstration purposes** and is **no longer maintained**.
+> It has been merged into and continued under [**ChatBud**](https://github.com/SandyCompetent/chatbud).
+>
+> 🚀 **Active Development:** Please check out the active repository at [**https://github.com/SandyCompetent/chatbud**](https://github.com/SandyCompetent/chatbud) for latest updates, features, and continued development!
+
+[![Status: Unmaintained](https://img.shields.io/badge/Status-Unmaintained%20%2F%20Demo-orange.svg)](https://github.com/SandyCompetent/chatbud)
+[![Merged with ChatBud](https://img.shields.io/badge/Merged%20with-ChatBud-blueviolet)](https://github.com/SandyCompetent/chatbud)
 [![Deploy Flutter Web and Android](https://github.com/sandycompetent/exeter_academic_agent/actions/workflows/deploy.yml/badge.svg)](https://github.com/sandycompetent/exeter_academic_agent/actions/workflows/deploy.yml)
 [![Flutter](https://img.shields.io/badge/Flutter-%3E%3D3.11-02569B?logo=flutter&logoColor=white)](https://flutter.dev)
 [![Gemini](https://img.shields.io/badge/Gemini-AI-orange?logo=google-gemini&logoColor=white)](https://ai.google.dev/)
@@ -7,14 +17,13 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Live Demo](https://img.shields.io/badge/demo-live-brightgreen.svg)](https://sandycompetent.github.io/exeter_academic_agent/)
 
-<p align="center">
-  <img src="output/output.gif" alt="Exeter Academic Agent Demo" width="100%"/>
-</p>
-
 This project implements a production-style **Agentic AI pipeline** on top of Google Gemini 2.5. The agent orchestrates multi-step reasoning with a visible "thinking" phase, dynamic model routing between Pro and Flash-Lite based on task complexity, and a secondary LLM observer pass for contextual follow-up generation. Token-by-token streaming delivers low-latency responses via async Dart streams, deployed as a cross-platform Flutter app (Web + Android) with CI/CD via GitHub Actions.
 
 ## 🎯 Why I Built This
-This project was born out of a desire to move beyond simple "GPT-wrappers" and explore the potential of **Agentic AI** in a specialized, high-stakes environment: Higher Education. 
+This project was born out of a desire to explore the potential of **Agentic AI** in a specialized, high-stakes environment (Higher Education) and served as a prototype for learning production LLM orchestration patterns.
+
+> [!NOTE]
+> Having served its educational and demo purpose, this repository is **now unmaintained**. Its core architecture, concepts, and ongoing improvements have been merged into [**ChatBud**](https://github.com/SandyCompetent/chatbud).
 
 Students at the University of Exeter face a fragmented data landscape—weather, bus schedules, and academic concepts are spread across different platforms. This assistant was built to:
 1. **Consolidate campus-specific data** into a single, intelligent interface.
@@ -88,9 +97,9 @@ flutter build apk --release --dart-define=API_KEY=your_gemini_api_key_here
 - `lib/screens/`: High-level feature modules (Chat Agent, Dashboard).
 
 ## 🚧 Known Limitations & Future Roadmap
-While built with a production-grade architecture, the project has a clear roadmap for future engineering improvements:
+While built with a production-grade architecture for demonstration, active development on these roadmap milestones has transitioned to [**ChatBud**](https://github.com/SandyCompetent/chatbud):
 
-- **RAG Integration (Planned)**: Moving from system-prompt grounding to a Vector Database (like local embeddings) to index official Exeter course handbooks and academic policy documents.
+- **RAG Integration**: Moving from system-prompt grounding to a Vector Database (like local embeddings) to index course handbooks and academic policy documents.
 - **Deeper API Integration**: Expanding from transit/weather to include real-time library seat availability and personalized timetable syncing.
 - **Reflection Loops**: Implementing a "Self-Critique" step in the agentic flow where the model verifies its own output for academic accuracy before streaming.
 - **Automated Evals**: Building a test suite for LLM-response evaluation to measure coherence and grounding over time.

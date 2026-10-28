@@ -124,6 +124,49 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
           const SizedBox(height: 16),
 
+          // Project Status Notice
+          Container(
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.surfaceContainerHighest,
+              borderRadius: BorderRadius.circular(16),
+            ),
+            padding: const EdgeInsets.all(16),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Icon(
+                      Icons.info_outline,
+                      color: Theme.of(context).colorScheme.primary,
+                      size: 20,
+                    ),
+                    const SizedBox(width: 8),
+                    Text(
+                      'Project Status: Demo / Unmaintained',
+                      style: Theme.of(context).textTheme.titleSmall?.copyWith(
+                            fontWeight: FontWeight.bold,
+                          ),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 8),
+                Text(
+                  'This project was built for learning and demonstration purposes and is no longer being maintained. It has been merged into the ChatBud project.',
+                  style: Theme.of(context).textTheme.bodySmall,
+                ),
+                const SizedBox(height: 10),
+                OutlinedButton.icon(
+                  onPressed: () =>
+                      _launchUrl('https://github.com/SandyCompetent/chatbud'),
+                  icon: const Icon(Icons.open_in_new, size: 16),
+                  label: const Text('View ChatBud on GitHub'),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: 16),
+
           // Developer Information
           ListTile(
             leading: const Icon(Icons.person_pin, size: 32),

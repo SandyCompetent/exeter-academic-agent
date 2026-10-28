@@ -1,5 +1,5 @@
 name: exeter_academic_agent
-description: "A production-ready Agentic Study Assistant powered by Google Gemini."
+description: "Learning and demo Agentic Study Assistant (unmaintained, merged with ChatBud)."
 publish_to: 'none'
 version: 1.0.0+1
 
